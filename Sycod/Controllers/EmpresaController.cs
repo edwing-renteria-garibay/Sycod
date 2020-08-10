@@ -12,5 +12,12 @@ namespace Sycod.Controllers
         {
             return View();
         }
+   
+
+        public IActionResult Filosofia()
+        {
+            return View("Views/Empresa/Filosofia/index.cshtml");
+        }
     }
+
 }
