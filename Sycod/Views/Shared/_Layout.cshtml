@@ -1,48 +1,451 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<!--
+
+    Theme Name: AMILIA
+    Description: HTML/CSS
+    Author: Abcgomel
+    Version: 1.0
+    Designed & Coded by Abcgomel
+
+-->
+<!--[if lt IE 7 ]> <html  class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html  class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html  class="ie8"> <![endif]-->
+<!--[if (gt IE 8)|!(IE)]><!-->
+<html>
+ <!--<![endif]-->
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Sycod</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <title>Amilia - Responsive HTML5 Template</title>
+    <meta charset=utf-8>
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="HTML5 Template">
+    <meta name="description" content="Amilia - Responsive HTML5 Template">
+    <meta name="author" content="abcgomel">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="favicon.ico">
+
+    <!-- CSS begin -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="~/node_modules/template/css/bootstrap.min.css">
+
+    <!--GOOGLE FONT-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,700,300,400' rel='stylesheet' type='text/css'>
+
+    <!-- FLEXSLIDER SLIDER css -->
+    <link rel="stylesheet" type="text/css" href="~/node_modules/template/css/flexslider.css">
+
+    <!-- IE warning CSS -->
+    <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="~/node_modules/template/css/ie-warning.css" ><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="~/node_modules/template/css/ie8-fix.css" ><![endif]-->
+    <!--Icons ELEGANT FONT & FONT AWESOME-->
+    <link rel="stylesheet" href="~/node_modules/template/css/icons-fonts.css">
+    <!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
+    <!-- Magnific popup  in style.css-->
+    <!-- Owl Carousel Assets in style.css -->
+    <!--CSS theme-->
+    <link rel="stylesheet" href="~/node_modules/template/css/style.css">
+
+    <!--STILE SWITCHER -->
+    <link rel="stylesheet" href="~/node_modules/template/css/layout/wide.css" id="layout">
+    <link rel="stylesheet" href="~/node_modules/template/css/colors/blue.css" id="colors">
+
+    <!-- ANIMATE -->
+    <link rel='stylesheet' href="~/node_modules/template/css/animate.min.css">
+
+    <!-- CSS end -->
+    <!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- MODERNIZR -->
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script> -->
+
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Sycod</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+<body class="fixed-header">
+    <div id="wrap" class="boxed ">
+        <div class="grey-bg">
+            <!-- Grey bg  -->
+            <!--[if lte IE 7]>
+            <div id="ie-container">
+                <div id="ie-cont-close">
+                    <a href='#' onclick='javascript&#058;this.parentNode.parentNode.style.display="none"; return false;'><img src='images/ie-warn/ie-warning-close.jpg' style='border: none;' alt='Close'></a>
+                </div>
+                <div id="ie-cont-content" >
+                    <div id="ie-cont-warning">
+                        <img src='images/ie-warn/ie-warning.jpg' alt='Warning!'>
+                    </div>
+                    <div id="ie-cont-text" >
+                        <div id="ie-text-bold">
+                            You are using an outdated browser
+                        </div>
+                        <div id="ie-text">
+                            For a better experience using this site, please upgrade to a modern web browser.
+                        </div>
+                    </div>
+                    <div id="ie-cont-brows" >
+                        <a href='http://www.firefox.com' target='_blank'><img src='images/ie-warn/ie-warning-firefox.jpg' alt='Download Firefox'></a>
+                        <a href='http://www.opera.com/download/' target='_blank'><img src='images/ie-warn/ie-warning-opera.jpg' alt='Download Opera'></a>
+                        <a href='http://www.apple.com/safari/download/' target='_blank'><img src='images/ie-warn/ie-warning-safari.jpg' alt='Download Safari'></a>
+                        <a href='http://www.google.com/chrome' target='_blank'><img src='images/ie-warn/ie-warning-chrome.jpg' alt='Download Google Chrome'></a>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+            <![endif]-->
+            <!-- HEADER 2 -->
+            <header id="nav" class="header header-2">
+                <div class="header-wrapper">
+                    <div class="container">
+                        <div class="logo-row">
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - Sycod - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+                            <!-- LOGO -->
+                            <div class="logo-container-2">
+                                <a href="/">
+                                    <div class="logo-2">
+                                        <img src="~/node_modules/template/images/logo-alt.png" class="logo-img" alt="Logo">
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- BUTTON -->
+                            <div class="menu-btn-respons-container">
+                                <button type="button" class="navbar-toggle btn-navbar collapsed" data-toggle="collapse" data-target=".main-menu .navbar-collapse">
+                                    <span class="text">MENU</span>
+                                    <span aria-hidden="true" class="icon_menu main-menu-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div><!-- END CONTAINER -->
+
+                    <div class="main-menu-container">
+
+                        <div class="container">
+                            <!-- MAIN MENU -->
+                            <div class="main-menu">
+                                <div class="navbar navbar-default" role="navigation">
+
+                                    <!-- MAIN MENU LIST-->
+                                    <nav class="collapse collapsing navbar-collapse right">
+                                        <ul class="nav navbar-nav">
+                                            <li class="parent current">
+                                                <a href="/"><div class="main-menu-title">INICIO</div></a>
+                                            </li>
+
+                                            <li class="parent">
+                                                <a href="/Empresa"><div class="main-menu-title">¿QUIÉNES SOMOS?</div></a>
+                                                <ul class="sub">
+                                                    <li><a href="portfolio-2-col.html">Filosofía</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="parent">
+                                                <a href=""><div class="main-menu-title">SOLUCIONES</div></a>
+                                                <ul class="sub">
+                                                    <li><a href="portfolio-2-col.html">Procesos de Negocio de Tecnología </a></li>
+                                                    <li><a href="portfolio-2-col.html">Infraestrutura Tecnológica </a></li>
+                                                    <li><a href="portfolio-2-col.html">Sistema de información especializada </a></li>
+                                                    <li><a href="portfolio-2-col.html">Redes y Seguridad </a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="parent">
+                                                <a href="/Partners"><div class="main-menu-title">SOCIOS</div></a>
+                                                <ul class="sub">
+                                                    <li><a href="portfolio-2-col.html">Casos de éxito </a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li id="menu-contact-info-big" class="parent megamenu">
+                                                <a href="/Contacto"><div class="main-menu-title">CONTACTO</div></a>
+                                                <ul class="sub">
+                                                    <li>
+                                                        <div class="menu-sub-container">
+
+                                                            <div class="col-md-3 menu-contact-info">
+                                                                <!-- <h5 class="title">CONTACT INFO</h5> -->
+                                                                <ul class="contact-list">
+                                                                    <li class="contact-loc clearfix">
+                                                                        <div class="loc-icon-container">
+                                                                            <span aria-hidden="true" class="icon_pin_alt main-menu-contact-icon"></span>
+                                                                        </div>
+                                                                        <div class="menu-contact-text-container">Torre Mural, San José Insurgentes, 03900 Ciudad de México, CDMX</div>
+                                                                    </li>
+                                                                    <li class="contact-phone clearfix">
+                                                                        <div class="loc-icon-container">
+                                                                            <span aria-hidden="true" class="icon_phone main-menu-contact-icon"></span>
+                                                                        </div>
+                                                                        <div class="menu-contact-text-container">(55) 5661 1516   Ext. 112</div>
+                                                                    </li>
+                                                                    <li class="contact-mail clearfix">
+                                                                        <div class="loc-icon-container">
+                                                                            <span aria-hidden="true" class="icon_mail_alt main-menu-contact-icon"></span>
+                                                                        </div>
+                                                                        <div class="menu-contact-text-container">
+                                                                            <a class="a-mail" href="mailto:contacto@sycod.com">contacto@sycod.com</a>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+
+                                                            <div class="col-md-6 menu-map-container hide-respons">
+                                                                <img src="~/node_modules/template/images/map.jpg" alt="map">
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+
+                                    </nav>
+
+                                </div>
+                            </div><!-- main-menu -->
+
+                        </div><!-- container -->
+
+                    </div><!--main-menu-container -->
+
+
+                </div><!-- header-wrapper -->
+            </header><!-- header -->
+
+            <div> @RenderBody() </div>
+
+            <!-- FOOTER -->
+            <footer>
+                <!-- FOOTER 2-->
+                <div class="footer-white-bg title-lines-container">
+                    <div class="container">
+                        <div class="row">
+                            <!-- LOGO  -->
+                            <div class="col-md-4">
+                                <div class="logo-row-footer-2 clearfix">
+                                    <div class="logo-container left">
+                                        <a href="index.html">
+                                            <div class="logo">
+                                                <img src="~/node_modules/template/images/logo.png" class="logo-img" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="logo-text-container">
+                                        <div class="logo-text">WE'D LOVE HEARING<br> FROM YOU</div>
+                                    </div>
+                                </div>
+                                <div class="social-icons-container-footer">
+                                    <ul class="social-icons-ul">
+                                        <li>
+                                            <a href="#">
+                                                <span aria-hidden="true" class="social_facebook main-menu-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span aria-hidden="true" class="social_twitter main-menu-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span aria-hidden="true" class="social_linkedin main-menu-icon"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span aria-hidden="true" class="social_skype main-menu-icon"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- LATEST TWEETS -->
+                            <div class="col-md-4">
+                                <h3 class="title-block footer-2-block">LATEST TWEETS</h3>
+                                <div class="lite-grey-bg full-col-container">
+                                    <div class="tweet"></div>
+                                </div>
+                            </div>
+                            <!-- CONTACT INFO -->
+                            <div class="col-md-4">
+
+                                <h3 class="title-block title-full-width footer-block title-bg-after">CONTACT INFO</h3>
+                                <div class="main-color-bg contact-bg-after">
+
+                                    <ul class="contact-list-footer">
+                                        <li class="contact-list-item clearfix">
+                                            <div class="contact-icon-container">
+                                                <span aria-hidden="true" class="icon_pin_alt main-menu-contact-icon"></span>
+                                            </div>
+                                            <div class="contact-text-container">Torre Mural, San José Insurgentes, 03900 Ciudad de México, CDMX</div>
+                                        </li>
+                                        <li class="contact-list-item clearfix">
+                                            <div class="contact-icon-container">
+                                                <span aria-hidden="true" class="icon_phone main-menu-contact-icon"></span>
+                                            </div>
+                                            <div class="contact-text-container">(55) 5661 1516   Ext. 112</div>
+                                        </li>
+                                        <li class="contact-list-item clearfix">
+                                            <div class="contact-icon-container">
+                                                <span aria-hidden="true" class="icon_mail_alt main-menu-contact-icon"></span>
+                                            </div>
+                                            <div class="contact-text-container">
+                                                <a class="a-mail" href="mailto:contacto@sycod.com">contacto@sycod.com</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- COPYRIGHT  -->
+                <div class="copyright-container title-lines-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="footer-menu-container">
+                                    <nav class="clearfix" id="footer-nav">
+                                        <ul class="footer-menu">
+                                            <li><a href="index.html">HOME</a></li>
+                                            <li><a href="shortcodes.html">FEATURES</a></li>
+                                            <li><a href="portfolio.html">PORTFOLIO</a></li>
+                                            <li><a href="blog-large-images.html">BLOG</a></li>
+                                            <li><a href="contact.html">CONTACT</a></li>
+                                            <li><a href="http://themeforest.net/item/amilia-responsive-multipurpose-template/10067059?ref=abcgomel">PURCHASE</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="footer-copyright-container">
+                                    <div class="footer-2-copyright-text">
+                                        © Amilia - Build with Passion by <a class="author" href="http://themeforest.net/user/abcgomel/portfolio">AbcGomel</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- COPYRIGHT -->
+                <p id="back-top">
+                    <a href="#top" title="Back to Top"><span></span></a>
+                </p>
+            </footer>
+
+        </div><!-- End BG -->
+    </div><!-- End wrap -->
+    <!-- JS begin -->
+    <!-- jQuery  -->
+    <script type="text/javascript" src="~/node_modules/template/js/jquery.min.js"></script>
+
+    <script src="~/node_modules/template/js/jquery-ui.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="~/node_modules/template/js/bootstrap.min.js"></script>
+
+    <!-- Flex Slider  -->
+    <script src="~/node_modules/template/js/jquery.flexslider.js"></script>
+    <script src="~/node_modules/template/js/flex-slider.js"></script>
+
+    <!-- JS FOR OWL CAROUSEL -->
+    <script src="~/node_modules/template/js/owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- SEARCH  SCRIPT IN MAIN JS  -->
+    <!-- PORTFOLIO FILTER -->
+    <script src="~/node_modules/template/js/jquery.isotope.min.js"></script>
+
+    <!-- MAGNIFIC POPUP -->
+    <script src='~/node_modules/template/js/jquery.magnific-popup.js'></script>
+
+    <!-- MAIN SCRIPT -->
+    <script src="~/node_modules/template/js/main.js"></script>
+
+    <!-- IMPORTANT SCRIPTS SETTINGS -->
+    <script>
+        //PORTFOLIO FILTER ISOTOPE----------------------------------------------------------------
+        $(function () {
+
+            var $container = $('#filter-container');
+
+            $container.isotope({
+                itemSelector: '.element'
+            });
+
+
+            var $optionSets = $('#options .option-set'),
+                $optionLinks = $optionSets.find('a');
+
+            $optionLinks.click(function () {
+                var $this = $(this);
+                // don't proceed if already selected
+                if ($this.hasClass('selected')) {
+                    return false;
+                }
+                var $optionSet = $this.parents('.option-set');
+                $optionSet.find('.selected').removeClass('selected');
+                $this.addClass('selected');
+
+                // make option object dynamically, i.e. { filter: '.my-filter-class' }
+                var options = {},
+                    key = $optionSet.attr('data-option-key'),
+                    value = $this.attr('data-option-value');
+                // parse 'false' as false boolean
+                value = value === 'false' ? false : value;
+                options[key] = value;
+                if (key === 'layoutMode' && typeof changeLayoutMode === 'function') {
+                    // changes in layout modes need extra logic
+                    changeLayoutMode($this, options)
+                } else {
+                    // otherwise, apply new options
+                    $container.isotope(options);
+                }
+
+                return false;
+            });
+
+
+        });
+
+        //START document.ready ==========================================================================
+        jQuery(document).ready(function () {
+
+            //Carousel CLIENTS Items---------------------------------------------
+            $("#owl-clients").owlCarousel({
+
+                //Set AutoPlay to 3 seconds
+                autoPlay: 5000,
+                items: 5,
+                itemsDesktop: [1000, 4], //5 items between 1000px and 901px
+                itemsDesktopSmall: [900, 3], // betweem 900px and 601px
+                itemsTablet: [470, 1], //2 items between 600 and 0
+                itemsMobile: false, // itemsMobile disabled - inherit from itemsTablet option
+                // itemsDesktop : [1199,4],
+                // itemsDesktopSmall : [991,1],
+                // itemsTablet: [991,1],
+                // itemsMobile : false,
+
+                //Pagination
+                pagination: false,
+                paginationNumbers: false,
+
+            });
+
+        });	//END document.ready ==========================================================================
+    </script>
     @RenderSection("Scripts", required: false)
+
+    <!-- JS end -->
+
+    <div class="switcher"></div>
+
+
 </body>
 </html>

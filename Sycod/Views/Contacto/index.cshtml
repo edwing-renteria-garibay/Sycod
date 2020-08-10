@@ -1,0 +1,282 @@
+﻿
+@{
+    ViewData["Title"] = "index";
+}
+
+<!-- PAGE TITLE 1 -->
+<div class="page-title-bg indent-header-1 page-main-content m-bot-40">
+    <div class="container">
+        <div class="page-title-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>CONTACTO</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a class="a-invert" href="/">INICIO</a></li>
+                        <li class="active">CONTACTO</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Google Maps -->
+<div id="contact-link" class="google-map-container-footer">
+    <div id="big-map-contact" class="google-map-footer"></div>
+</div>
+<!-- Google Maps / End -->
+<!-- CONTACT ONE PAGE FOOTER -->
+<div class="title-lines-container m-top-min-35">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6 m-bot-50">
+                <!-- TITLE -->
+                <div class="title-lines">
+                    <div class="title-lines-white-bg"></div>
+                    <div class="title-block">
+                        CONTACTENOS
+                    </div>
+                </div>
+                <!-- CONTACT FORM -->
+                <div class="gray-bg-container m-top-min-35 ">
+                    <div class="contact-form-container ">
+                        <form id="contact-form" action="php/contact-form.php" method="POST">
+                            <div class="row">
+                                <div>
+                                    <div class="col-md-6 m-bot-15">
+                                        <!-- <label>Your name *</label> -->
+                                        <input type="text" value="" data-msg-required="Por favor introduce tu nombre." maxlength="100" class="form-control" name="name" id="name" placeholder="NOMBRE" required>
+                                    </div>
+                                    <div class="col-md-6 m-bot-15">
+                                        <!-- <label>Your name *</label> -->
+                                        <input type="text" value="" data-msg-required="Por favor introduce tus apellidos." maxlength="100" class="form-control" name="name" id="name" placeholder="APELLIDOS" required>
+                                    </div>
+                                    <div class="col-md-6 m-bot-15">
+                                        <!-- <label>Your email address *</label> -->
+                                        <input type="email" value="" data-msg-required="Por favor introduce tu correo eléctronico." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" placeholder="CORREO" required>
+                                    </div>
+                                    <div class="col-md-6 m-bot-15">
+                                        <!-- <label>Your name *</label> -->
+                                        <input type="text" value="" data-msg-required="Por favor introduce tu teléfono." maxlength="100" class="form-control" name="name" id="name" placeholder="TELÉFONO" required>
+                                    </div>
+                                    <div class="col-md-6 m-bot-15">
+                                        <!-- <label>Your name *</label> -->
+                                        <input type="text" value="" data-msg-required="Por favor introduce el nombre tu compañia." maxlength="100" class="form-control" name="name" id="name" placeholder="NOMBRE DE LA COMPAÑIA" required>
+                                    </div>
+                                    <div class="col-md-6 m-bot-15">
+                                        <!-- <label>Your name *</label> -->
+                                        <input type="text" value="" data-msg-required="Por favor introduce el puesto de tu compañia." maxlength="100" class="form-control" name="name" id="name" placeholder="PUESTO EN LA COMPAÑIA" required>
+                                    </div>
+                                    <div class="col-md-12 m-bot-15">
+                                        <select class="form-control">
+                                            <option value="">- SELECCIONA EL ESTADO -</option>
+                                            <option value="Aguascalientes">Aguascalientes</option>
+                                            <option value="Baja California">Baja California</option>
+                                            <option value="Baja California Sur">Baja California Sur</option>
+                                            <option value="Campeche">Campeche</option>
+                                            <option value="Chiapas">Chiapas</option>
+                                            <option value="Chihuahua">Chihuahua</option>
+                                            <option value="Coahuila">Coahuila</option>
+                                            <option value="Colima">Colima</option>
+                                            <option value="Distrito Federal">Distrito Federal</option>
+                                            <option value="Durango">Durango</option>
+                                            <option value="Estado de México">Estado de México</option>
+                                            <option value="Guanajuato">Guanajuato</option>
+                                            <option value="Guerrero">Guerrero</option>
+                                            <option value="Hidalgo">Hidalgo</option>
+                                            <option value="Jalisco">Jalisco</option>
+                                            <option value="Michoacán">Michoacán</option>
+                                            <option value="Morelos">Morelos</option>
+                                            <option value="Nayarit">Nayarit</option>
+                                            <option value="Nuevo León">Nuevo León</option>
+                                            <option value="Oaxaca">Oaxaca</option>
+                                            <option value="Puebla">Puebla</option>
+                                            <option value="Querétaro">Querétaro</option>
+                                            <option value="Quintana Roo">Quintana Roo</option>
+                                            <option value="San Luis Potosí">San Luis Potosí</option>
+                                            <option value="Sinaloa">Sinaloa</option>
+                                            <option value="Sonora">Sonora</option>
+                                            <option value="Tabasco">Tabasco</option>
+                                            <option value="Tamaulipas">Tamaulipas</option>
+                                            <option value="Tlaxcala">Tlaxcala</option>
+                                            <option value="Veracruz">Veracruz</option>
+                                            <option value="Yucatán">Yucatán</option>
+                                            <option value="Zacatecas">Zacatecas</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <div class="col-md-12 m-bot-15">
+                                        <!-- <label>Message *</label> -->
+                                        <textarea maxlength="5000" data-msg-required="Por favor introduce tu mensaje." rows="7" class="form-control" name="message" id="message" placeholder="MENSAJE" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="submit" value="ENVIAR MENSAJE" class="button medium thin-bg-dark" data-loading-text="Cargando...">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="alert alert-success hidden" id="contactSuccess">
+                            <strong>Success!</strong> Your message has been sent to us.
+                        </div>
+
+                        <div class="alert alert-danger hidden" id="contactError">
+                            <strong>Error!</strong> There was an error sending your message.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 m-bot-50">
+                <!-- TITLE -->
+                <div class="title-lines-2 m-bot-40">
+                    <div class="title-block">
+                        INFORMACIÓN CONTACTO
+                    </div>
+                </div>
+                <!-- CONTACT INFO -->
+                <div class="contact-info-container wow fadeInRight" data-wow-duration="1100ms">
+                    <div class="contact-info-item-container m-bot-20">
+                        <!-- Icon -->
+                        <div class="contact-info-icon-container">
+                            <span aria-hidden="true" class="icon_pin_alt contact-info-icon"></span>
+                        </div>
+                        <!-- <div class="contact-info-title">ADDRESS</div> -->
+                        <h2 class="title-20">DIRECCIÓN</h2>
+                        <div class="contact-info-text">Torre Mural, San José Insurgentes, 03900 Ciudad de México, CDMX</div>
+                    </div>
+                    <div class="contact-info-item-container m-bot-20">
+                        <!-- Icon -->
+                        <div class="contact-info-icon-container">
+                            <span aria-hidden="true" class="icon_phone contact-info-icon"></span>
+                        </div>
+                        <h2 class="title-20">TELÉFONO</h2>
+                        <div class="contact-info-text">(55) 5661 1516   Ext. 112</div>
+                    </div>
+                    <div class="contact-info-item-container m-bot-40">
+                        <!-- Icon -->
+                        <div class="contact-info-icon-container">
+                            <span aria-hidden="true" class="icon_mail_alt contact-info-icon"></span>
+                        </div>
+                        <h2 class="title-20">CORREO</h2>
+                        <div class="contact-info-text"><a class="a-invert" href="mailto:contacto@sycod.com">contacto@sycod.com</a></div>
+                    </div>
+                    <div class="m-bot-20">
+                        <h2 class="title-20">HORAS DE TRABAJO</h2>
+                        <div class="contact-info-text"><p>Lunes - Viernes: <strong>9:00 am - 10:00 pm</strong><br>Sabado - Domingo: <strong>Cerrado</strong></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+    <!--GOOLE MAP-->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="~/node_modules/template/js/gmap3.min.js"></script>
+
+    <!-- MAGNIFIC POPUP -->
+    <script src='~/node_modules/template/js/jquery.magnific-popup.js'></script>
+
+    <!-- SCROLL ANIMATIONS ON -->
+    <script src="~/node_modules/template/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- MAIN SCRIPT -->
+    <script src="~/node_modules/template/js/main.js"></script>
+
+    <!-- FORMS VALIDATION	-->
+    <script src="~/node_modules/template/js/jquery.validation.js"></script>
+    <script src="~/node_modules/template/js/contact-form-validation.js"></script>
+
+    <!-- PLACEHOLDERS  for FORMS	-->
+    <script src="~/node_modules/template/js/jquery.placeholder.js"></script>
+
+    <script>
+        var latlng = new google.maps.LatLng(19.363852, -99.182735);
+
+        $("#big-map-contact").gmap3(
+            {
+                marker: {
+                    //address: "385 Bourke St., Melbourne Victoria 3000 Australia",
+                    latLng: latlng,
+                    data: "<h4>Office</h4>Your description is here.",
+                    options: { icon: "node_modules/template/images/loc-marker.png" },
+
+                    events: {
+                        click: function (marker, event, context) {
+                            var map = $(this).gmap3("get"),
+                                infowindow = $(this).gmap3({ get: { name: "infowindow" } });
+                            if (infowindow) {
+                                infowindow.open(map, marker);
+                                infowindow.setContent(context.data);
+                            } else {
+                                $(this).gmap3({
+                                    infowindow: {
+                                        anchor: marker,
+                                        options: { content: context.data }
+                                    }
+                                });
+                            }
+                        },
+                    }
+
+                },
+                map: {
+
+                    options: {
+                        //center: latlng,
+                        scrollwheel: false,
+                        zoom: 18,
+
+                        mapTypeId: "style2",
+                        mapTypeControlOptions: {
+                            mapTypeIds: [google.maps.MapTypeId.ROADMAP]
+                        }
+                    },
+
+                },
+                styledmaptype: {
+                    id: "style2",
+                    options: {
+                        name: "Style 2"
+                    },
+                    styles: [
+                        {
+                            stylers: [
+                                { saturation: -80 },
+                                { hue: "#ffee00" }
+                            ]
+                        }
+                    ]
+                },
+
+            }
+        );
+
+        //PLACEHOLDERS  for FORMS	--------------------------------------------------------
+        // To test the toggling on password inputs in browsers that don’t support changing an input’s dynamically (e.g. Firefox 3.6 or IE), uncomment this:
+        // $.fn.hide = function() { return this; }
+        // Then uncomment the last rule in the <style> element (in the <head>).
+        $(function () {
+            // Invoke the plugin
+            $('input, textarea').placeholder();
+            // That’s it, really.
+            // Now display a message if the browser supports placeholder natively
+
+        });
+    </script>
+}
